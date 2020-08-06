@@ -1,0 +1,5 @@
+crear otra clase y hacer injection por medio del context
+//Leer y/o investigar: Bean Validation
+Lang en java
+java.io
+pruebas unitarias
