@@ -1,31 +1,31 @@
 
 package com.mycompany.primera;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import java.time.LocalDate;
+import java.util.Set;
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;       
 
 public class Saludo {
     public static void main (String args[]){
         
-        ApplicationContext context = new ClassPathXmlApplicationContext("/beans.xml");
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 
-        Customer customer1 = (Customer) context.getBean("customer1");
+Validator validator = factory.getValidator();
 
-System.out.println(customer1.toString());
-        /*System.out.println("Hello world");
+Usuario usuario = new Usuario();
+usuario.setEdad(18);
+usuario.setNombre("Pablo");
+usuario.setEmail("loro@gmail.com");
+usuario.setLocalDate(LocalDate.now().plusYears(1));
+
+Set<ConstraintViolation<Usuario>> violations = validator.validate(usuario);
+
+for (ConstraintViolation<Usuario> violation : violations) {
+System.out.println(violation.getMessage());
+}
         
-        Customer customer1=new Customer();
-        
-customer1.setId(1L);
-customer1.setName("Pablo");
-customer1.setAddress("Guatemala");
-
-Customer customer2=new Customer();
-customer2.setId(2L);
-customer2.setName("Avenir");
-customer2.setAddress("Mixco");*/
-
-
     }
 }

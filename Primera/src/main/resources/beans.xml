@@ -9,18 +9,10 @@ http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 
     <bean id="customer1" class="com.mycompany.primera.Customer">
-
-<property name="id" value="3" />
-
-<property name="name" value="Edson" />
-
-<property name="address" value="Villa Nueva" />
-
-</bean>
+        <property name="id" value="dos"/>
+        <property name="name" value="Gabriel"/>
+        <property name="address" value="Villa Nueva"/>    
+    </bean>
+    
     
 </beans>
-
-
-<root>
-    
-</root>
