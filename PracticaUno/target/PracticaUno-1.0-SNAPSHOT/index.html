@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Modulo Proveedores</title>
+        <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>Modulo Proveedores</h1>
+        <STYLE type="text/css">
+        h2, h3 { text-align: center}
+        </STYLE>
+        <h2 style="color:dodgerblue;font-size:30px;">Modulo Proveedores</h2>
+        <hr style="border-color:orange;">         
+        <a href="index.jsp"></a>        
+        <br/>              
         
-        <form action="PracticaUno" method="get">
-            <input type="text" name="nombre" placeholder="Codigo del proveedor">
+        <form action="Controlador" method="get">            
+            <h3 style="color:tomato;">Para crear un proveedor ingrese los siguientes datos:</h3>            
             <br/>
-            <input type="text" name="nombre" placeholder="Nombre comercial">
+            <div align="center">               
+            <input type="text" name="codigoProveedor" placeholder="Codigo del proveedor"/>
             <br/>
-            <input type="text" name="nombre" placeholder="Contacto">
+            <input type="text" name="nombreComercial" placeholder="Nombre comercial"/>
             <br/>
-            <input type="text" name="nombre" placeholder="Direccion">
+            <input type="text" name="contacto" placeholder="Contacto"/>
             <br/>
-            <input type="email" name="nombre" placeholder="Correo electronico">
+            <input type="text" name="direccion" placeholder="Direccion"/>
             <br/>
-            <input type="text" name="nombre" placeholder="Pais">
+            <input type="email" name="correoElectronico" placeholder="Correo electronico"/>
             <br/>
-            <input type="text" name="nombre" placeholder="Eliminado">
+            <input type="text" name="pais" placeholder="Pais"/>
             <br/>
+            <input type="text" name="eliminado" placeholder="eliminado"/>
+            <br/>          
             <br/>
-            <input type="button" value="Crear">
-            
+            <input type="submit" value="Crear"/>
+            </div>
         </form>
         
     </body>

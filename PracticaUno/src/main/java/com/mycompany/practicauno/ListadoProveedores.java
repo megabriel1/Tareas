@@ -10,8 +10,16 @@ public class ListadoProveedores {
 
         List<Proveedor> lista=new ArrayList();
         
-        for(int i=0; i<lista.size(); i++){
+        for(int i=0; i<4; i++){
             Proveedor nuevo=new Proveedor();
+            
+            nuevo.setCodigoProveedor(i);
+            nuevo.setContacto(i);
+            nuevo.setCorreoElectronico("pepita@gmail.com"+i);
+            nuevo.setDireccion("avenida"+i);
+            nuevo.setNombreComercial("Empresa"+i);
+            nuevo.setPais("Guate"+i);
+            nuevo.setEliminado(true);
             
             lista.add(nuevo);
         }
