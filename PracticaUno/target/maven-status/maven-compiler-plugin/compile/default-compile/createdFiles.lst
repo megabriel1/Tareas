@@ -1,3 +1,6 @@
-com\mycompany\practicauno\ListadoProveedores.class
-com\mycompany\practicauno\Proveedor.class
-controladores\Controlador.class
+ListadoProveedores\ListadoProveedores.class
+com\mycompany\practicauno\WebConfig.class
+controladores\ControladorIndex.class
+ProveedorControlador\ProveedorControlador.class
+com\mycompany\practicauno\MainWebAppInitializer.class
+Proveedor\Proveedor.class
